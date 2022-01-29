@@ -1,6 +1,6 @@
 clear
 echo "***************************************"
-echo "Tested on 12.1. Monterey ARM64/X86_64  "
+echo "Tested on 12.2  Monterey ARM64/X86_64  "
 echo "          zsh macos backdoor           "
 echo "***************************************"
 
@@ -25,7 +25,7 @@ echo "***************************************"
 # cp /bin/zsh ./shell 
 # ./shell 
 # zsh: exec format error: ./shell 
-# So in this exploit we are using a copied zsh executable 
+# So in this exploit we are using a copied bash executable 
 # from a MacOS Monterey VM which does not have such restrictions 
 # the executable is included with the exploit as shell 
 
